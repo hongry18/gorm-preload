@@ -3,6 +3,7 @@ services:
     container_name: mariadb
     image: mariadb:10.8.3
     environment:
-      - MYSQL_ROOT_PASSWORD=test
+       - MYSQL_DATABASE=test
+       - MARIADB_ROOT_PASSWORD=root
     ports:
       - 3306:3306
